@@ -1,6 +1,3 @@
-DROP TABLE IF EXISTS Notas;
-DROP TABLE IF EXISTS Usuarios;
-
 CREATE TABLE Usuarios (
 	id SERIAL,
 	nome VARCHAR(100) NOT NULL UNIQUE,
@@ -31,6 +28,5 @@ VALUES
 
 INSERT INTO Notas (titulo, conteudo, concluido, usuario_id, data_de_conclusao)
 VALUES
-	('Estudar Desenvolvimento Web','Verificar as opções de Framworks Front-end e ferramentas de Back-end para: Geração de HTML dinâmico; criação de rotas; acesso a Banco de Dados;', FALSE, 1, '2024-01-11 11:00:00 America/Sao_Paulo'),
-	('Estudar Game Design','Estudar design de jogos, e diferentes Frameworks e Game Engines para jogos 2D e 3D', FALSE, 1, '2024-01-25 11:00:00 America/Sao_Paulo');
-
+	('Estudar Desenvolvimento Web','Verificar as opções de Framworks Front-end e ferramentas de Back-end para: Geração de HTML dinâmico; criação de rotas; acesso a Banco de Dados;', FALSE, 1, '2024-01-11 11:00:00'),
+	('Estudar Game Design','Estudar design de jogos, e diferentes Frameworks e Game Engines para jogos 2D e 3D', FALSE, 1, '2024-01-25 11:00:00');
