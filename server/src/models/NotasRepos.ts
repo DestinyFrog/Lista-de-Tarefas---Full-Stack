@@ -20,10 +20,16 @@ class Notas {
 		this.id = id
 		this.titulo = titulo
 		this.conteudo = conteudo
-		this.created_at = created_at
-		this.concluido_em = concluido_em
 		this.concluido = concluido
-		this.data_de_conclusao = data_de_conclusao
+
+		this.created_at = new Date(created_at)
+		this.created_at.setTime(this.created_at.getTime() - 3 * 60 * 60 * 1000);
+
+		this.concluido_em = new Date(concluido_em)
+		this.concluido_em.setTime(this.concluido_em.getTime() - 3 * 60 * 60 * 1000);
+
+		this.data_de_conclusao = new Date(data_de_conclusao)
+		this.data_de_conclusao.setTime(this.data_de_conclusao.getTime() - 3 * 60 * 60 * 1000);
 	}
 
 	public static async GetAll(): Promise<Notas[]> {
@@ -39,7 +45,7 @@ class Notas {
 	public static async GetByUsuario( id:number ): Promise<Notas[]> {
 		const conn = Database.OpenConnection()
 		conn.connect()
-		const res = await conn.query(`SELECT * FROM Notas WHERE usuario_id = $1 ORDER BY created_at`, [ id ])
+		const res = await conn.query(`SELECT * FROM Notas WHERE usuario_id = $1 ORDER BY id`, [ id ])
 		conn.end()
 
 		const data = res.rows.map(t => new Notas(t))
