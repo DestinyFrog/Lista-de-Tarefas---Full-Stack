@@ -1,0 +1,30 @@
+* {
+	font-family: 'Courier New', Courier, monospace;
+
+	padding: 0;
+	margin: 0;
+
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 22px;
+}
+
+p {
+	font-size: 15px;
+}
+
+#but_sair {
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+
+	border-top: 1px double aliceblue;
+	border-bottom: 1px double aliceblue;
+	margin: 4px;
+
+	background-color: black;
+	color: aliceblue;
+}
