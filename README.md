@@ -36,6 +36,8 @@ Criar uma página HTMl utilizando PHP para se comunicar com a API e alterar os d
 | Tecnologia | Função |
 | --- | --- |
 | ___Front-End___ | |
+| <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/HTML.svg"/> | _* HTML_<br/>Estruturar os componentes das páginas WEB. |
+| <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/CSS.svg"/> | _* CSS_<br/>Estiliza os componentes das páginas HTML. |
 | <img width="40" src="https://raw.githubusercontent.com/tandpfun/skill-icons/de91fca307a83d75fc5b1f6ce24540454acead41/icons/PHP-Dark.svg" /> | _* PHP_<br/>Linguagem de Programação utilizada para "desenhar" a página HTML do lado do servidor (SSR) e consumir a API da aplicação. |
 | <img width="40" src="https://www.svgrepo.com/show/353400/apache.svg" /> | _* Apache_<br/>Um servidor Web livre onde estão os arquivos PHP e CSS. Eele serve as páginas em um servidor HTTP/HTTPS. |
 | ___API___ | |
@@ -50,4 +52,4 @@ Criar uma página HTMl utilizando PHP para se comunicar com a API e alterar os d
 
 - Edição do conteúdo das Notas;
 - Edição do conteúdo de Usuários;
-- integrar com contêineres utilizando Docker;
+- Integrar com contêineres utilizando Docker;
